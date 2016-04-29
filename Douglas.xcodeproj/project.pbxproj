@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAD21D4B1CD356D700E5A249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD21D4A1CD356D700E5A249 /* AppDelegate.swift */; };
+		FAD21D4D1CD356D700E5A249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD21D4C1CD356D700E5A249 /* ViewController.swift */; };
+		FAD21D501CD356D700E5A249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD21D4E1CD356D700E5A249 /* Main.storyboard */; };
+		FAD21D521CD356D700E5A249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD21D511CD356D700E5A249 /* Assets.xcassets */; };
+		FAD21D551CD356D700E5A249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD21D531CD356D700E5A249 /* LaunchScreen.storyboard */; };
+		FAD21D601CD356D800E5A249 /* DouglasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD21D5F1CD356D800E5A249 /* DouglasTests.swift */; };
+		FAD21D6B1CD356D800E5A249 /* DouglasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD21D6A1CD356D800E5A249 /* DouglasUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAD21D5C1CD356D800E5A249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD21D3F1CD356D700E5A249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD21D461CD356D700E5A249;
+			remoteInfo = Douglas;
+		};
+		FAD21D671CD356D800E5A249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD21D3F1CD356D700E5A249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD21D461CD356D700E5A249;
+			remoteInfo = Douglas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAD21D471CD356D700E5A249 /* Douglas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Douglas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD21D4A1CD356D700E5A249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAD21D4C1CD356D700E5A249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAD21D4F1CD356D700E5A249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAD21D511CD356D700E5A249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAD21D541CD356D700E5A249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAD21D561CD356D700E5A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD21D5B1CD356D800E5A249 /* DouglasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouglasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD21D5F1CD356D800E5A249 /* DouglasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouglasTests.swift; sourceTree = "<group>"; };
+		FAD21D611CD356D800E5A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD21D661CD356D800E5A249 /* DouglasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DouglasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD21D6A1CD356D800E5A249 /* DouglasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouglasUITests.swift; sourceTree = "<group>"; };
+		FAD21D6C1CD356D800E5A249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD21D441CD356D700E5A249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD21D581CD356D800E5A249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD21D631CD356D800E5A249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAD21D3E1CD356D700E5A249 = {
+			isa = PBXGroup;
+			children = (
+				FAD21D491CD356D700E5A249 /* Douglas */,
+				FAD21D5E1CD356D800E5A249 /* DouglasTests */,
+				FAD21D691CD356D800E5A249 /* DouglasUITests */,
+				FAD21D481CD356D700E5A249 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD21D481CD356D700E5A249 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD21D471CD356D700E5A249 /* Douglas.app */,
+				FAD21D5B1CD356D800E5A249 /* DouglasTests.xctest */,
+				FAD21D661CD356D800E5A249 /* DouglasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD21D491CD356D700E5A249 /* Douglas */ = {
+			isa = PBXGroup;
+			children = (
+				FAD21D4A1CD356D700E5A249 /* AppDelegate.swift */,
+				FAD21D4C1CD356D700E5A249 /* ViewController.swift */,
+				FAD21D4E1CD356D700E5A249 /* Main.storyboard */,
+				FAD21D511CD356D700E5A249 /* Assets.xcassets */,
+				FAD21D531CD356D700E5A249 /* LaunchScreen.storyboard */,
+				FAD21D561CD356D700E5A249 /* Info.plist */,
+			);
+			path = Douglas;
+			sourceTree = "<group>";
+		};
+		FAD21D5E1CD356D800E5A249 /* DouglasTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD21D5F1CD356D800E5A249 /* DouglasTests.swift */,
+				FAD21D611CD356D800E5A249 /* Info.plist */,
+			);
+			path = DouglasTests;
+			sourceTree = "<group>";
+		};
+		FAD21D691CD356D800E5A249 /* DouglasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD21D6A1CD356D800E5A249 /* DouglasUITests.swift */,
+				FAD21D6C1CD356D800E5A249 /* Info.plist */,
+			);
+			path = DouglasUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAD21D461CD356D700E5A249 /* Douglas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD21D6F1CD356D800E5A249 /* Build configuration list for PBXNativeTarget "Douglas" */;
+			buildPhases = (
+				FAD21D431CD356D700E5A249 /* Sources */,
+				FAD21D441CD356D700E5A249 /* Frameworks */,
+				FAD21D451CD356D700E5A249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Douglas;
+			productName = Douglas;
+			productReference = FAD21D471CD356D700E5A249 /* Douglas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAD21D5A1CD356D800E5A249 /* DouglasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD21D721CD356D800E5A249 /* Build configuration list for PBXNativeTarget "DouglasTests" */;
+			buildPhases = (
+				FAD21D571CD356D800E5A249 /* Sources */,
+				FAD21D581CD356D800E5A249 /* Frameworks */,
+				FAD21D591CD356D800E5A249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD21D5D1CD356D800E5A249 /* PBXTargetDependency */,
+			);
+			name = DouglasTests;
+			productName = DouglasTests;
+			productReference = FAD21D5B1CD356D800E5A249 /* DouglasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAD21D651CD356D800E5A249 /* DouglasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD21D751CD356D800E5A249 /* Build configuration list for PBXNativeTarget "DouglasUITests" */;
+			buildPhases = (
+				FAD21D621CD356D800E5A249 /* Sources */,
+				FAD21D631CD356D800E5A249 /* Frameworks */,
+				FAD21D641CD356D800E5A249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD21D681CD356D800E5A249 /* PBXTargetDependency */,
+			);
+			name = DouglasUITests;
+			productName = DouglasUITests;
+			productReference = FAD21D661CD356D800E5A249 /* DouglasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD21D3F1CD356D700E5A249 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Suedwolf;
+				TargetAttributes = {
+					FAD21D461CD356D700E5A249 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					FAD21D5A1CD356D800E5A249 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FAD21D461CD356D700E5A249;
+					};
+					FAD21D651CD356D800E5A249 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FAD21D461CD356D700E5A249;
+					};
+				};
+			};
+			buildConfigurationList = FAD21D421CD356D700E5A249 /* Build configuration list for PBXProject "Douglas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAD21D3E1CD356D700E5A249;
+			productRefGroup = FAD21D481CD356D700E5A249 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD21D461CD356D700E5A249 /* Douglas */,
+				FAD21D5A1CD356D800E5A249 /* DouglasTests */,
+				FAD21D651CD356D800E5A249 /* DouglasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD21D451CD356D700E5A249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD21D551CD356D700E5A249 /* LaunchScreen.storyboard in Resources */,
+				FAD21D521CD356D700E5A249 /* Assets.xcassets in Resources */,
+				FAD21D501CD356D700E5A249 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD21D591CD356D800E5A249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD21D641CD356D800E5A249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD21D431CD356D700E5A249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD21D4D1CD356D700E5A249 /* ViewController.swift in Sources */,
+				FAD21D4B1CD356D700E5A249 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD21D571CD356D800E5A249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD21D601CD356D800E5A249 /* DouglasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD21D621CD356D800E5A249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD21D6B1CD356D800E5A249 /* DouglasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAD21D5D1CD356D800E5A249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD21D461CD356D700E5A249 /* Douglas */;
+			targetProxy = FAD21D5C1CD356D800E5A249 /* PBXContainerItemProxy */;
+		};
+		FAD21D681CD356D800E5A249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD21D461CD356D700E5A249 /* Douglas */;
+			targetProxy = FAD21D671CD356D800E5A249 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAD21D4E1CD356D700E5A249 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD21D4F1CD356D700E5A249 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAD21D531CD356D700E5A249 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAD21D541CD356D700E5A249 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAD21D6D1CD356D800E5A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAD21D6E1CD356D800E5A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD21D701CD356D800E5A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Douglas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suedwolf.Douglas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAD21D711CD356D800E5A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Douglas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suedwolf.Douglas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAD21D731CD356D800E5A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DouglasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suedwolf.DouglasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Douglas.app/Douglas";
+			};
+			name = Debug;
+		};
+		FAD21D741CD356D800E5A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DouglasTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suedwolf.DouglasTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Douglas.app/Douglas";
+			};
+			name = Release;
+		};
+		FAD21D761CD356D800E5A249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DouglasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suedwolf.DouglasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Douglas;
+			};
+			name = Debug;
+		};
+		FAD21D771CD356D800E5A249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DouglasUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suedwolf.DouglasUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Douglas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD21D421CD356D700E5A249 /* Build configuration list for PBXProject "Douglas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD21D6D1CD356D800E5A249 /* Debug */,
+				FAD21D6E1CD356D800E5A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD21D6F1CD356D800E5A249 /* Build configuration list for PBXNativeTarget "Douglas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD21D701CD356D800E5A249 /* Debug */,
+				FAD21D711CD356D800E5A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAD21D721CD356D800E5A249 /* Build configuration list for PBXNativeTarget "DouglasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD21D731CD356D800E5A249 /* Debug */,
+				FAD21D741CD356D800E5A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FAD21D751CD356D800E5A249 /* Build configuration list for PBXNativeTarget "DouglasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD21D761CD356D800E5A249 /* Debug */,
+				FAD21D771CD356D800E5A249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD21D3F1CD356D700E5A249 /* Project object */;
+}
