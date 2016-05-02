@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
+    
+    let locationManager = CLLocationManager()
+    
+    @IBOutlet weak var locationLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +22,14 @@ class ViewController: UIViewController {
         
         locationLabel.text = "loading ..."
         
-        getWeather()
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
+            locationManager.startUpdatingLocation()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,8 +37,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func getWeather() {
-        let url = "http://api.openweathermap.org/data/2.5/forecast?lat=51.0278436&lon=13.7210183&appid=8c0de5377117f2900604f8ff069e6fae"
+    func getWeather(latitude: Double, longitude: Double) {
+        let url = "http://api.openweathermap.org/data/2.5/forecast?lat=\(latitude)&lon=\(longitude)&appid=8c0de5377117f2900604f8ff069e6fae"
         
         let requestURL: NSURL = NSURL(string: url)!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
@@ -41,16 +54,29 @@ class ViewController: UIViewController {
                     let json = try NSJSONSerialization.JSONObjectWithData(data!, options:.AllowFragments)
                     if let city = json["city"] as? [String: AnyObject], let name = city["name"] as? String {
                         print(name)
-                        self.locationLabel.text = name
+                        
+                        dispatch_async(dispatch_get_main_queue(), { 
+                            self.locationLabel.text = name
+                        })
                     }
                 }catch {
                     print("Error with Json: \(error)")
+                    self.locationLabel.text = "ERROR"
                 }
             }
         }
         
         task.resume()
     }
-    @IBOutlet weak var locationLabel: UILabel!
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        print("hello")
+        let loc:CLLocationCoordinate2D = manager.location!.coordinate
+        print(loc.latitude)
+        print(loc.longitude)
+        
+        getWeather(loc.latitude,longitude: loc.longitude)
+    }
+    
 }
 

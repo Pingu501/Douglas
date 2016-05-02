@@ -484,6 +484,7 @@
 				FAD21D711CD356D800E5A249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD21D721CD356D800E5A249 /* Build configuration list for PBXNativeTarget "DouglasTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				FAD21D741CD356D800E5A249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAD21D751CD356D800E5A249 /* Build configuration list for PBXNativeTarget "DouglasUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				FAD21D771CD356D800E5A249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
