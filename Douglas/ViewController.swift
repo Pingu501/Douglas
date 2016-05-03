@@ -44,7 +44,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         //let url = "http://api.openweathermap.org/data/2.5/forecast?lat=\(latitude)&lon=\(longitude)&appid=8c0de5377117f2900604f8ff069e6fae"
         let url = "https://api.forecast.io/forecast/c3558c4014d176377086e6951837eacb/\(latitude),\(longitude)"
         
-        //print(url)
+        print(url)
         
         let requestURL: NSURL = NSURL(string: url)!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
@@ -69,16 +69,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         })
                     }
                     //if let weather = json["list"]!![1]["weather"] as? [AnyObject]{
-                    print(json)
-                    if let weather = json["list"]!!["hourly"]!!["data"] as? [AnyObject]{
-                        let regenwahrscheinlichkeit = weather[0]["precipProbability"] as! Double
-                        let niederschlag = weather[0]["precipIntensity"] as! Double
+                    //print(json)
+                    if let weather = json["hourly"]!!["data"] as? [AnyObject]{
+                        let precipProbability = weather[0]["precipProbability"] as! Double
+                        let precipIntensity = weather[0]["precipIntensity"] as! Double
                         
-                        print(regenwahrscheinlichkeit, niederschlag)
+                        print(precipProbability, precipIntensity)
                         
                         //yellow
                         var bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
-                        if (regenwahrscheinlichkeit >  0.2 || niederschlag > 0.017) {
+                        if (precipProbability >  0.2 || precipIntensity > 0.017) {
                             //blue
                             bgColor = UIColor(hue: 219/360, saturation: 0.468, brightness: 0.90, alpha: 1)
                         } else {
