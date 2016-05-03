@@ -70,15 +70,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     }
                     //if let weather = json["list"]!![1]["weather"] as? [AnyObject]{
                     if let weather = json["list"]!!["hourly"]["data"] as? [AnyObject]{
-                        let weatherid = weather[0]["id"] as! Int
+                        let regenwahrscheinlichkeit = weather[0]["precipProbability"] as! Int
+                        let niederschlag = weather[0]["precipIntensity"] as! Int
                         
-                        print(weatherid)
+                        print(regenwahrscheinlichkeit, niederschlag)
                         
                         //yellow
                         var bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
-                        if (weatherid < 800) {
+                        if (regenwahrscheinlichkeit > 0.2 || niederschlag > 0.017) {
                             //blue
-                            //bgColor = UIColor(hue: 219/360, saturation: 0.468, brightness: 0.90, alpha: 1)
+                            bgColor = UIColor(hue: 219/360, saturation: 0.468, brightness: 0.90, alpha: 1)
                         } else {
                             bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
                         }
