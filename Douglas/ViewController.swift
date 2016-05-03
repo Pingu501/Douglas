@@ -22,6 +22,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         locationLabel.text = "loading ..."
         
+        self.view.backgroundColor = UIColor(hue: 52/360, saturation: 0.2, brightness: 0.90, alpha: 1)
+        
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
         
@@ -66,10 +68,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                             self.locationLabel.text = name
                         })
                     }
-                    
                     //if let weather = json["list"]!![1]["weather"] as? [AnyObject]{
                     if let weather = json["list"]!!["hourly"]["data"] as? [AnyObject]{
-                        print(weather[0])
+                        let weatherid = weather[0]["id"] as! Int
+                        
+                        print(weatherid)
+                        
+                        //yellow
+                        var bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
+                        if (weatherid < 800) {
+                            //blue
+                            //bgColor = UIColor(hue: 219/360, saturation: 0.468, brightness: 0.90, alpha: 1)
+                        } else {
+                            bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
+                        }
+                    
+                        dispatch_async(dispatch_get_main_queue(), {
+                            self.view.backgroundColor = bgColor
+                        })
                     }
                     
                 }catch {
@@ -85,9 +101,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let loc:CLLocationCoordinate2D = manager.location!.coordinate
         //print(loc.latitude)
         //print(loc.longitude)
-        locationManager.stopUpdatingLocation()
+        //locationManager.stopUpdatingLocation()
+        print("update")
         
         getWeather(loc.latitude,longitude: loc.longitude)
+        
     }
     
 }
