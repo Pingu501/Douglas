@@ -39,7 +39,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
 
     func getWeather(latitude: Double, longitude: Double) {
-        let url = "http://api.openweathermap.org/data/2.5/forecast?lat=\(latitude)&lon=\(longitude)&appid=8c0de5377117f2900604f8ff069e6fae"
+        //let url = "http://api.openweathermap.org/data/2.5/forecast?lat=\(latitude)&lon=\(longitude)&appid=8c0de5377117f2900604f8ff069e6fae"
+        let url = "https://api.forecast.io/forecast/c3558c4014d176377086e6951837eacb/\(latitude),\(longitude)"
         
         //print(url)
         
@@ -66,8 +67,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         })
                     }
                     
-                    if let weather = json["list"]!![1]["weather"] as? [AnyObject]{
-                        print(weather[0]["id"] as! Int)
+                    //if let weather = json["list"]!![1]["weather"] as? [AnyObject]{
+                    if let weather = json["list"]!!["hourly"]["data"] as? [AnyObject]{
+                        print(weather[0])
                     }
                     
                 }catch {
