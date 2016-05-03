@@ -37,8 +37,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+
     func getWeather(latitude: Double, longitude: Double) {
         let url = "http://api.openweathermap.org/data/2.5/forecast?lat=\(latitude)&lon=\(longitude)&appid=8c0de5377117f2900604f8ff069e6fae"
+        
+        //print(url)
         
         let requestURL: NSURL = NSURL(string: url)!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
@@ -52,16 +55,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             if (statusCode == 200) {
                 do{
                     let json = try NSJSONSerialization.JSONObjectWithData(data!, options:.AllowFragments)
+                    
                     if let city = json["city"] as? [String: AnyObject], let name = city["name"] as? String {
-                        print(name)
-                        
-                        dispatch_async(dispatch_get_main_queue(), { 
+                        //print(name)
+
+                        //set the UI change into the main frame
+                        dispatch_async(dispatch_get_main_queue(), {
+                            print(name)
                             self.locationLabel.text = name
                         })
                     }
+                    
+                    if let weather = json["list"]!![1]["weather"] as? [AnyObject]{
+                        print(weather[0]["id"] as! Int)
+                    }
+                    
                 }catch {
                     print("Error with Json: \(error)")
-                    self.locationLabel.text = "ERROR"
                 }
             }
         }
@@ -70,10 +80,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("hello")
         let loc:CLLocationCoordinate2D = manager.location!.coordinate
-        print(loc.latitude)
-        print(loc.longitude)
+        //print(loc.latitude)
+        //print(loc.longitude)
+        locationManager.stopUpdatingLocation()
         
         getWeather(loc.latitude,longitude: loc.longitude)
     }
