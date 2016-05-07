@@ -22,7 +22,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         locationLabel.text = "loading ..."
         
-        self.view.backgroundColor = UIColor(hue: 52/360, saturation: 0.2, brightness: 0.90, alpha: 1)
+        self.view.backgroundColor = UIColor(hue: 52/360, saturation: 0, brightness: 0.47, alpha: 1)
         
         // For use in foreground
         self.locationManager.requestWhenInUseAuthorization()
@@ -43,8 +43,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func getWeather(latitude: Double, longitude: Double) {
         //let url = "http://api.openweathermap.org/data/2.5/forecast?lat=\(latitude)&lon=\(longitude)&appid=8c0de5377117f2900604f8ff069e6fae"
         let url = "https://api.forecast.io/forecast/c3558c4014d176377086e6951837eacb/\(latitude),\(longitude)"
-        
-        print(url)
         
         let requestURL: NSURL = NSURL(string: url)!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(URL: requestURL)
@@ -74,8 +72,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         let precipProbability = weather[0]["precipProbability"] as! Double
                         let precipIntensity = weather[0]["precipIntensity"] as! Double
                         
-                        print(precipProbability, precipIntensity)
-                        
                         //yellow
                         var bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
                         if (precipProbability >  0.2 || precipIntensity > 0.017) {
@@ -100,11 +96,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)->Void in
+            if error == nil && placemarks!.count > 0 {
+                let placemark = placemarks![0] as CLPlacemark
+                if(placemark.locality != nil) {
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.locationLabel.text = placemark.locality!
+                    })
+                }
+            }
+        })
+        
         let loc:CLLocationCoordinate2D = manager.location!.coordinate
         //print(loc.latitude)
         //print(loc.longitude)
-        //locationManager.stopUpdatingLocation()
-        print("update")
+        locationManager.stopUpdatingLocation()
         
         getWeather(loc.latitude,longitude: loc.longitude)
         
