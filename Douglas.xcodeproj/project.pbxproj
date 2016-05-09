@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA59DF271CE09074002FB630 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA59DF261CE09074002FB630 /* FontAwesome.ttf */; };
 		FAD21D4B1CD356D700E5A249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD21D4A1CD356D700E5A249 /* AppDelegate.swift */; };
 		FAD21D4D1CD356D700E5A249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD21D4C1CD356D700E5A249 /* ViewController.swift */; };
 		FAD21D501CD356D700E5A249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD21D4E1CD356D700E5A249 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA59DF261CE09074002FB630 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "Font-Awesome-Swift/Source/FontAwesome.ttf"; sourceTree = "<group>"; };
 		FAD21D471CD356D700E5A249 /* Douglas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Douglas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD21D4A1CD356D700E5A249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD21D4C1CD356D700E5A249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				FAD21D5E1CD356D800E5A249 /* DouglasTests */,
 				FAD21D691CD356D800E5A249 /* DouglasUITests */,
 				FAD21D481CD356D700E5A249 /* Products */,
+				FA59DF261CE09074002FB630 /* FontAwesome.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +190,9 @@
 		FAD21D3F1CD356D700E5A249 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Suedwolf;
@@ -233,6 +239,7 @@
 				FAD21D551CD356D700E5A249 /* LaunchScreen.storyboard in Resources */,
 				FAD21D521CD356D700E5A249 /* Assets.xcassets in Resources */,
 				FAD21D501CD356D700E5A249 /* Main.storyboard in Resources */,
+				FA59DF271CE09074002FB630 /* FontAwesome.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

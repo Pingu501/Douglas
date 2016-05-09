@@ -15,11 +15,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     
     @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var weatherIcon: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        weatherIcon.text = "\u{f082}"
         locationLabel.text = "loading ..."
         
         self.view.backgroundColor = UIColor(hue: 52/360, saturation: 0, brightness: 0.47, alpha: 1)
@@ -73,16 +74,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         let precipIntensity = weather[0]["precipIntensity"] as! Double
                         
                         //yellow
+                        var icon: String
                         var bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
                         if (precipProbability >  0.2 || precipIntensity > 0.017) {
                             //blue
                             bgColor = UIColor(hue: 219/360, saturation: 0.468, brightness: 0.90, alpha: 1)
+                            icon = "\u{f0c2}"
                         } else {
                             bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
+                            icon = "\u{f185}"
                         }
                     
                         dispatch_async(dispatch_get_main_queue(), {
                             self.view.backgroundColor = bgColor
+                            self.weatherIcon.text = icon
                         })
                     }
                     

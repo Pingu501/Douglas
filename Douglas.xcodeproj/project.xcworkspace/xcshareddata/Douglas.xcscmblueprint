@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5E16065B2F9F82894BF6B6AD4634B68F2387F2A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5E16065B2F9F82894BF6B6AD4634B68F2387F2A7" : 0,
+    "8E571D52BBC75AA6FE6AA00AC801FBAA558BBE65" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0A4337D1-B4DF-412E-8BA2-DA2E7BDBED55",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5E16065B2F9F82894BF6B6AD4634B68F2387F2A7" : "Douglas\/",
+    "8E571D52BBC75AA6FE6AA00AC801FBAA558BBE65" : "Douglas\/Font-Awesome-Swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Douglas",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Douglas.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Pingu501\/douglas.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5E16065B2F9F82894BF6B6AD4634B68F2387F2A7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Vaberer\/Font-Awesome-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8E571D52BBC75AA6FE6AA00AC801FBAA558BBE65"
+    }
+  ]
+}
