@@ -20,7 +20,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        weatherIcon.text = "\u{f082}"
         locationLabel.text = "loading ..."
         
         self.view.backgroundColor = UIColor(hue: 52/360, saturation: 0, brightness: 0.47, alpha: 1)
@@ -70,18 +69,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     //if let weather = json["list"]!![1]["weather"] as? [AnyObject]{
                     //print(json)
                     if let weather = json["hourly"]!!["data"] as? [AnyObject]{
-                        let precipProbability = weather[0]["precipProbability"] as! Double
-                        let precipIntensity = weather[0]["precipIntensity"] as! Double
+                        let precipProbability = weather[1]["precipProbability"] as! Double
+                        let precipIntensity = weather[1]["precipIntensity"] as! Double
                         
                         //yellow
                         var icon: String
-                        var bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
+                        var bgColor: UIColor
                         if (precipProbability >  0.2 || precipIntensity > 0.017) {
                             //blue
                             bgColor = UIColor(hue: 219/360, saturation: 0.468, brightness: 0.90, alpha: 1)
                             icon = "\u{f0c2}"
                         } else {
-                            bgColor = UIColor(hue: 52/360, saturation: 0.468, brightness: 0.90, alpha: 1)
+                            bgColor = UIColor(hue: 56/360, saturation: 0.468, brightness: 0.90, alpha: 1)
                             icon = "\u{f185}"
                         }
                     
